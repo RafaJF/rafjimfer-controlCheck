@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-31 14:19:14.828","acme.testing.inventor.chimpum.InventorDeleteChimpumTest","positiveTest",12788,""[1] recordIndex=0, tittle=C5, description=., startPeriod=2022/07/21 23:00, endPeriod=2022/07/28 23:00, budget=USD 2,000.00, link=https://link.com"","OK"

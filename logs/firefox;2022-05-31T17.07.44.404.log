@@ -1,0 +1,14 @@
+1654009528589	geckodriver	INFO	Listening on 127.0.0.1:5219
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofilea3JMFl\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRJavaScript erecipes: "getRecipes: ror: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is nufalling back to a synchronous messagll
+e for:" "http://localhost:8081"
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+

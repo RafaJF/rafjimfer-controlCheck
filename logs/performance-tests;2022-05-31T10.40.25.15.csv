@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-31 10:39:44.823","acme.testing.inventor.chimpum.InventorChimpumCreateTest","hackingTest",8980,""hackingTest()"","Cannot find 'By.xpath: //div[@id='mainMenu']/ul/li/a[normalize-space()='Sign in']'"

@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-31 10:40:45.326","acme.testing.inventor.chimpum.InventorChimpumCreateTest","hackingTest",9253,""hackingTest()"","OK"

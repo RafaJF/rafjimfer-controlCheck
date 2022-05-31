@@ -1,0 +1,13 @@
+1654006499355	geckodriver	INFO	Listening on 127.0.0.1:27702
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofilenoCVEd\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LogiJnRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+avaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falJavling back to a synacShcrript error: resource://groen/ous memodules/LosgsinManagea gfor:"e "hrPattprent.jsm, l:i/n/localhost:8081"
+e 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a sJavaScript error: resource://gre/modules/LoginManagerParent.jynchsm,ron lious messnagee 136: TypeError fo: gr:"Rec "hipettpManager is ://nullocl
+alhost:8081"

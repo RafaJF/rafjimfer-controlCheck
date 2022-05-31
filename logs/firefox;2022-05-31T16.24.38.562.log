@@ -1,0 +1,23 @@
+1654006885474	geckodriver	INFO	Listening on 127.0.0.1:29108
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofileOjHiql\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecJipes: "getRecipes: falling back to a synchronousavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+ message for:" "http://localhost:8081"
+console.warn: LoginJavaScript error:Rec resoipesu: "getRercipece://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+s: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes:JavaScri pt falerrlinor:g b resoack to a synchronous message for:" "http://localhost:8081"
+urce://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syJnacvhroanousS cmreissapge ft eor:rro"r : r"htesotp:urc//le:ocalhost:8081"
+//gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messageJava for:Sc" ript "hterror: resourcetp://:/lo/grcalheost:/mod80ul81e"
+s/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling baJck toavaS acrip tsynchro enorror:us message f resouror:" "ce://httgre/p:/m/loocdaulholst:es/8081"Log
+inManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+

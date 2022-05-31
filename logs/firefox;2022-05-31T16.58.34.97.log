@@ -1,0 +1,21 @@
+1654008742992	geckodriver	INFO	Listening on 127.0.0.1:49151
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofilew4onQY\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginJRecipeasvaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipesJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeEr: ror: gRecipeManager is null
+falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "geJavaScript error: resource://gre/modules/LoginManagerParent.jtRecipes: falling basm, line 136: Tyck tpeo Era synchroronor: gReciuspeManager message  for:" "http:/is /null
+localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message forJ:a"v a"Shctrtipp:/t error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+/localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falJavlaiSncript error: resource://gg re/modulbeasc/LoginMak to a synchrnoagerParennt.ojsmu, ls messiangee 136: T for:"y p"ehError: gRecipeMatntapg:e//rlocalhost:8081" is n
+ull
+console.warn: LoginRecipes: "getReJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeErcriopr: gReces: falilinpeMg baanagcer kis  ton a uslyl
+nchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchroJnavaScript error: resource://gre/modules/LoginMoaus mensasgeraPgaer efnt.jsm, line 136: TypeError: gRecipeManager is null
+or:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: fallinJga vback to a synchronous message for:" "http://localhost:8081"aS
+cript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null

@@ -1,0 +1,21 @@
+1654007199139	geckodriver	INFO	Listening on 127.0.0.1:9424
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofileyuFaBS\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRJavaScript error: resource://gre/modules/LoginManagerParenecipes: "getRecipes: falling back to a synchronous message for:"t.jsm, line 136: TypeError: gRecipeManager is null
+ "http://localhost:8081"
+console.warn: LoginRJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeErroecipes: "getRecipes: falrling back to :a  gsynchronous Rmeessage for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecicpes: faillpinge backM tao na synchraonous message for:" "httgepr :i//localhost:8081"
+s null
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"JavaScri
+pt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipesJ: faavaScript error: resource://gre/modulling bales/Lockgi to a synchronounManagse rmPearenssage for:" "http://localhost:8081"
+t.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falJavaScrliipng back tto a er synchronous message for:" "httpro://r: locresalhoourcst:e://gre/modules808/Lo1"gin
+ManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:J8a081"
+vaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipesJav:aScript error:  rfalling bacesource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+k to a synchronous message for:" "http://localhost:8081"
