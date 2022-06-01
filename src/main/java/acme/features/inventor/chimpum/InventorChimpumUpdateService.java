@@ -110,15 +110,17 @@ public class InventorChimpumUpdateService implements AbstractUpdateService<Inven
 
 		}
 		if(!errors.hasErrors("endPeriod")) {
-			
-			final Date starDate = entity.getStartPeriod();
-			
-			final Date endPeriodMin = DateUtils.addWeeks(starDate, 1);
-			final Date endPeriodMinDay = DateUtils.addDays(endPeriodMin, -1);
-			final Date endPeriod = entity.getEndPeriod();
+			if(entity.getStartPeriod() != null) {
+				final Date starDate = entity.getStartPeriod();
+				
+				final Date endPeriodMin = DateUtils.addWeeks(starDate, 1);
+				final Date endPeriodMinDay = DateUtils.addDays(endPeriodMin, -1);
+				final Date endPeriod = entity.getEndPeriod();
 
-			errors.state(request, endPeriod.after(endPeriodMinDay), "endPeriod", "inventor.chimpum.form.error.endPeriod-must-be-a-week-after-startPeriod");
+				errors.state(request, endPeriod.after(endPeriodMinDay), "endPeriod", "inventor.chimpum.form.error.endPeriod-must-be-a-week-after-startPeriod");
 
+			}
+			
 		}
 		if(!errors.hasErrors("tittle")) {
 			final boolean res;

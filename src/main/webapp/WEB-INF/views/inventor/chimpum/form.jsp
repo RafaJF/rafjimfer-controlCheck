@@ -17,6 +17,13 @@
 	<acme:input-textbox code="inventor.chimpum.list.label.startperiod" path="startPeriod"/>
 	<acme:input-textbox code="inventor.chimpum.list.label.endperiod" path="endPeriod"/>
 	<acme:input-textbox code="inventor.chimpum.list.label.budget" path="budget"/>
+	
+	<jstl:choose>
+		<jstl:when test="${command == 'show' && newBudget.getCurrency()!=budget.getCurrency()}">
+	    	<acme:input-money code="inventor.patronage.form.label.budget-conversion" path="newBudget" readonly="true"/>
+	    </jstl:when>
+    </jstl:choose>
+	
 	<acme:input-url code="inventor.chimpum.list.label.link" path="link"/>
 	
 	<jstl:choose>

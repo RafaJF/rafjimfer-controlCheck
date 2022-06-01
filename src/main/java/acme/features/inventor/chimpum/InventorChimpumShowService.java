@@ -4,8 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.chimpum.Chimpum;
+import acme.entities.moneyExchange.MoneyExchange;
+import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
 
@@ -50,7 +53,33 @@ public class InventorChimpumShowService implements AbstractShowService<Inventor,
 		assert entity != null;
 		assert model != null;
 		
+		final Money newBudget = this.moneyExchangePatronages(entity);
+		model.setAttribute("newBudget", newBudget);
 		request.unbind(entity, model, "code","creationMoment","tittle","description","startPeriod","endPeriod","budget","link");
+	}
+	
+	
+	public Money moneyExchangePatronages(final Chimpum p) {
+		final String itemCurrency = p.getBudget().getCurrency();
+	
+		final AuthenticatedMoneyExchangePerformService moneyExchange = new AuthenticatedMoneyExchangePerformService();
+		final String systemCurrency = this.chimpumRepository.systemConfiguration().getSystemCurrency();
+		final Double conversionAmount;
+		
+		if(!systemCurrency.equals(itemCurrency)) {
+			MoneyExchange conversion;
+			conversion = moneyExchange.computeMoneyExchange(p.getBudget(), systemCurrency);
+			conversionAmount = conversion.getTarget().getAmount();	
+		}
+		else {
+			conversionAmount = p.getBudget().getAmount();
+		}
+		
+		final Money newBudget = new Money();
+		newBudget.setAmount(conversionAmount);
+		newBudget.setCurrency(systemCurrency);
+		
+		return newBudget;
 	}
 
 }
