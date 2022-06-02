@@ -8,3 +8,9 @@ inventor.chimpum.list.label.itemsPublished = Artículos
 
 inventor.chimpum.list.label.startperiod = Start Period
 inventor.chimpum.list.label.endperiod = End Period
+
+inventor.chimpum.form.error.link = URL no válido
+inventor.chimpum.form.error.budget-amount-negative-or-zero= El precio debe ser superior a 0
+inventor.chimpum.form.error.budget-currency-invalid = La moneda introducida debe ser aceptada por el sistema
+inventor.chimpum.form.error.startPeriod-must-be-a-month-after-creationMoment= La fecha de inicio debe ser al menos un mes después de la de creación
+inventor.chimpum.form.error.endPeriod-must-be-a-week-after-startPeriod = La fecha de fin debe ser al menos una semana después de la de inicio
