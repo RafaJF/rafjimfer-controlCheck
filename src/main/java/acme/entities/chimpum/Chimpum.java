@@ -63,7 +63,7 @@ public class Chimpum extends AbstractEntity {
 
 	//Control Check -----------------------------------------------------------
 
-	@OneToOne(optional = true)
+	@OneToOne(optional = false)
 	@Valid
 	protected Item				item;
 

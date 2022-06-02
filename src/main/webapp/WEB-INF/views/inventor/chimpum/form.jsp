@@ -14,8 +14,8 @@
 	<acme:input-textbox code="inventor.chimpum.list.label.creationMoment" path="creationMoment" readonly="true"/>	
 	<acme:input-textbox code="inventor.chimpum.list.label.tittle" path="tittle"/>
 	<acme:input-textarea code="inventor.chimpum.list.label.description" path="description"/>
-	<acme:input-textbox code="inventor.chimpum.list.label.startperiod" path="startPeriod"/>
-	<acme:input-textbox code="inventor.chimpum.list.label.endperiod" path="endPeriod"/>
+	<acme:input-moment code="inventor.chimpum.list.label.startperiod" path="startPeriod"/>
+	<acme:input-moment code="inventor.chimpum.list.label.endperiod" path="endPeriod"/>
 	<acme:input-textbox code="inventor.chimpum.list.label.budget" path="budget"/>
 	
 	<jstl:choose>
