@@ -881,16 +881,16 @@ bg=orange</panel_attributes>
       <h>140</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Chimpum
+Pelfo
 --
-+code: String{NotBlank,Pattern(PATTERN)}
++code: String{NotBlank,Pattern("^\\d{6}:yy:mm:dd$")}
 +creationMoment: Date{Temporal(TIMESTAMP),NotNull,Past}
-+tittle: String{NotBlank,Legth(0,100)}
-+description: String{NotBlank,Legth(0,255)}
++name: String{NotBlank,Legth(0,100)}
++summaryion: String{NotBlank,Legth(0,255)}
 +startPeriod: Date{Temporal(TIMESTAMP),NotNull}
 +endPeriod: Date{Temporal(TIMESTAMP),NotNull}
-+budget: Money
-+link: String{URL}
++ration: Money
++additionalInfo: String{URL}
 
 bg=green</panel_attributes>
     <additional_attributes/>
