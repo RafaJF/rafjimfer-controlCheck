@@ -25,8 +25,8 @@
 			<table>
 			<caption></caption>
 				<tr>
-				<th id="ratioArtefactWithChimpum">
-					<acme:print value="${ratioArtefactWithChimpum}"/>
+				<th id="ratioTooltWithPelfo">
+					<acme:print value="${ratioTooltWithPelfo}"/>
 				</th>
 				</tr>
 			</table>
@@ -38,10 +38,10 @@
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column-50">
-				<jstl:forEach items="${ averageBudgetChimpumByCurrency.keySet() }"
+				<jstl:forEach items="${ averageRationPelfoByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set value="${ averageBudgetChimpumByCurrency.get(key) }"
+						<jstl:set value="${ averageRationPelfoByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
@@ -63,10 +63,10 @@
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column-50">
-				<jstl:forEach items="${ deviationBudgetChimpumByCurrency.keySet() }"
+				<jstl:forEach items="${ deviationRationPelfoByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set value="${ deviationBudgetChimpumByCurrency.get(key) }"
+						<jstl:set value="${ deviationRationPelfoByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
@@ -88,10 +88,10 @@
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column-50">
-				<jstl:forEach items="${ minBudgetChimpumByCurrency.keySet() }"
+				<jstl:forEach items="${ minRationPelfoByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set value="${ minBudgetChimpumByCurrency.get(key) }"
+						<jstl:set value="${ minRationPelfoByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
@@ -113,10 +113,10 @@
 			<table class="table table-sm">
 			<caption></caption>
 			<div class="column-50">
-				<jstl:forEach items="${ maxBudgetChimpumByCurrency.keySet() }"
+				<jstl:forEach items="${ maxRationPelfoByCurrency.keySet() }"
 					var="key">
 					<tr>
-						<jstl:set value="${ maxBudgetChimpumByCurrency.get(key) }"
+						<jstl:set value="${ maxRationPelfoByCurrency.get(key) }"
 							var="amount" />
 						<jstl:if test="${ amount>0 }">
 							<th scope="row" style="width: 15%"><acme:message
@@ -528,16 +528,16 @@
 
 
 <script type="text/javascript">
-   var averageBudgetChimpumByCurrency = {
-   	<jstl:forEach items="${averageBudgetChimpumByCurrency}" var="item" varStatus="loop">
+   var averageRationPelfoByCurrency = {
+   	<jstl:forEach items="${averageRationPelfoByCurrency}" var="item" varStatus="loop">
    	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
    	</jstl:forEach>
    };
    
    const avg_chimpum_data = {
-     labels: Object.keys(averageBudgetChimpumByCurrency),
+     labels: Object.keys(averageRationPelfoByCurrency),
      datasets: [{
-       data: Object.values(averageBudgetChimpumByCurrency),
+       data: Object.values(averageRationPelfoByCurrency),
        backgroundColor: [
     	   'rgb(254, 136, 127)',
      	  'rgb(136, 255, 114)',
@@ -571,16 +571,16 @@
    });
 </script>
 <script type="text/javascript">
-   var deviationBudgetChimpumByCurrency = {
-   	<jstl:forEach items="${deviationBudgetChimpumByCurrency}" var="item" varStatus="loop">
+   var deviationRationPelfoByCurrency = {
+   	<jstl:forEach items="${deviationRationPelfoByCurrency}" var="item" varStatus="loop">
    	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
    	</jstl:forEach>
    };
    
    const dev_chimpum_data = {
-     labels: Object.keys(deviationBudgetChimpumByCurrency),
+     labels: Object.keys(deviationRationPelfoByCurrency),
      datasets: [{
-       data: Object.values(deviationBudgetChimpumByCurrency),
+       data: Object.values(deviationRationPelfoByCurrency),
        backgroundColor: [
     	   'rgb(254, 136, 127)',
      	  'rgb(136, 255, 114)',
@@ -614,16 +614,16 @@
    });
 </script>
 <script type="text/javascript">
-   var minBudgetChimpumByCurrency = {
-   	<jstl:forEach items="${minBudgetChimpumByCurrency}" var="item" varStatus="loop">
+   var minRationPelfoByCurrency = {
+   	<jstl:forEach items="${minRationPelfoByCurrency}" var="item" varStatus="loop">
    	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
    	</jstl:forEach>
    };
    
    const min_chimpum_data = {
-     labels: Object.keys(minBudgetChimpumByCurrency),
+     labels: Object.keys(minRationPelfoByCurrency),
      datasets: [{
-       data: Object.values(minBudgetChimpumByCurrency),
+       data: Object.values(minRationPelfoByCurrency),
        backgroundColor: [
     	   'rgb(254, 136, 127)',
      	  'rgb(136, 255, 114)',
@@ -657,16 +657,16 @@
    });
 </script>
 <script type="text/javascript">
-   var maxBudgetChimpumByCurrency = {
-   	<jstl:forEach items="${maxBudgetChimpumByCurrency}" var="item" varStatus="loop">
+   var maxRationPelfoByCurrency = {
+   	<jstl:forEach items="${maxRationPelfoByCurrency}" var="item" varStatus="loop">
    	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
    	</jstl:forEach>
    };
    
    const max_chimpum_data = {
-     labels: Object.keys(maxBudgetChimpumByCurrency),
+     labels: Object.keys(maxRationPelfoByCurrency),
      datasets: [{
-       data: Object.values(maxBudgetChimpumByCurrency),
+       data: Object.values(maxRationPelfoByCurrency),
        backgroundColor: [
     	   'rgb(254, 136, 127)',
      	  'rgb(136, 255, 114)',
