@@ -1,8 +1,0 @@
-1653986361130	geckodriver	INFO	Listening on 127.0.0.1:6611
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofile59k6EE\\search.json.mozlz4", (void 0)))
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-console.warn: LoginRecipes:J "getRecipes: falling baack to a syncvaScript error: resource://gre/modulehronous messas/Lge for:" "http://localhosto:8081"
-ginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-
-###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
-

@@ -1,9 +1,5 @@
 package acme.testing.patron.patronage;
 
-import java.util.Calendar;
-import java.util.Date;
-
-import org.apache.commons.lang3.time.DateUtils;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,16 +9,11 @@ import acme.testing.TestHarness;
 
 public class PatronPatronageCreateTest extends TestHarness {
 	
-	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/patron/patronage/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positivePatronage(final int recordIndex, final String code, final String legalStuff, final String budget, final String startDate, final String endDate, 
 		final String moreInfo) {
-		
-		Date creationMoment = Calendar.getInstance().getTime();
-		Date period = DateUtils.addMonths(creationMoment, 1);
-		period = DateUtils.addWeeks(period, 1);
 		
 		//añadir inventor al metodo
 		super.signIn("patron1", "patron1");
@@ -37,7 +28,6 @@ public class PatronPatronageCreateTest extends TestHarness {
 		super.fillInputBoxIn("startDate",startDate );
 		super.fillInputBoxIn("endDate", endDate);
 		super.fillInputBoxIn("moreInfo", moreInfo);
-		//super.fillInputBoxIn("inventor", inventor);
 	
 		super.clickOnSubmit("Create");
 		

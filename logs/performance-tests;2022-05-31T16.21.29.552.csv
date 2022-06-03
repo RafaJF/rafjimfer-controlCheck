@@ -1,4 +1,0 @@
-timestamp,test-class,test-method,time,description,result
-"2022-05-31 16:19:10.339","acme.testing.inventor.chimpum.InventorChimpumListTest","positiveTest",19642,""[1] recordIndex=0, code=22/05/25, creationMoment=2022/05/25 21:51, tittle=BChimpum tittle 2: Lorem ipsum dolor sit amet cnsectetur adipiscing elit sed do eiusmod tempor incid, budget=EUR 500.75"","OK"
-"2022-05-31 16:19:22.048","acme.testing.inventor.chimpum.InventorChimpumListTest","positiveTest",10991,""[2] recordIndex=1, code=22/05/26, creationMoment=2022/05/26 21:51, tittle=CChimpum tittle 3., budget=USD 1,000.00"","OK"
-"2022-05-31 16:19:32.483","acme.testing.inventor.chimpum.InventorChimpumListTest","positiveTest",9858,""[3] recordIndex=2, code=22/05/27, creationMoment=2022/05/27 21:51, tittle=DChimpum tittle 4., budget=USD 2,000.00"","OK"

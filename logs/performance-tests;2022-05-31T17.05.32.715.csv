@@ -1,2 +1,0 @@
-timestamp,test-class,test-method,time,description,result
-"2022-05-31 17:02:44.301","acme.testing.inventor.chimpum.InventorChimpumListTest","positiveTest",9850,""[3] recordIndex=3, code=22/05/26, creationMoment=2022/05/26 21:51, tittle=CChimpum tittle 3., description=Chimpum description 3, startPeriod=2022/07/20 23:00, endPeriod=2022/07/27 23:00, budget=USD 1,000.00, link=https://link.com"","Record index 3 is out of range"

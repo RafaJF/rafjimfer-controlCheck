@@ -1,21 +1,0 @@
-1654009116078	geckodriver	INFO	Listening on 127.0.0.1:22123
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rafa\\AppData\\Local\\Temp\\rust_mozprofiledMJQ6N\\search.json.mozlz4", (void 0)))
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-console.warn:JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE LoginRecipes: "getRecipes: farror: gRecipeManager is nullilng back to a sl
-ynchronous message for:" "http://localhost:8081"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"Ja
-vaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: fallJavaScriipng batc k to a syerrnchroonous message for:" "http://localhost:8r0: resource://gre/module81"s/L
-oginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: fallinJavaScript error: regs obuarccke :t/o/ ag rsey/nmchronous message for:" "http://localhost:8081"
-odules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synJavacScript error: resource://gre/moduleshronous message for:" "http://localhost:8081"
-/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://JloacvalhaScriost:8081p"t er
-ror: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falJavaSlcriptin errorg b: ack to resa syource://gncrehr/moduonousles me/Lossage fginor:" "http://localhostMa:80na81"
-gerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipesJavaScript error: resource://gre/modules/Log:i nfMaalnlinagg erParenbt.jsm, lackine 136: Type Erroto r: gRa secipeMyananchrgoenro us messiage s nfor:" "htutll
-p://localhost:8081"
