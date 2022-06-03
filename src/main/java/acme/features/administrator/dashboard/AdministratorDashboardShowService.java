@@ -195,35 +195,35 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 				Double.parseDouble(x.get(1).toString())));
 		
 		//CONTROL CHECK---------------------------------------------------------
-		final String ratioArtefactWithChimpum;
-		final Map<String, Double> averageBudgetChimpumByCurrency = new HashMap<String, Double>();
-		final Map<String, Double> deviationBudgetChimpumByCurrency = new HashMap<String, Double>();
-		final Map<String, Double> minBudgetChimpumByCurrency = new HashMap<String, Double>();
-		final Map<String, Double> maxBudgetChimpumByCurrency = new HashMap<String, Double>();
+		final String ratioToolWithPelfo;
+		final Map<String, Double> averageRationPelfoByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> deviationRationPelfoByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> minRationPelfoByCurrency = new HashMap<String, Double>();
+		final Map<String, Double> maxRationPelfoByCurrency = new HashMap<String, Double>();
 		
-		final int ArtefactWithChimpum = this.repository.numArtefactWithChimpum();
+		final int ArtefactWithChimpum = this.repository.numArtefactWithPelfo();
 		final int ArtefactWithoutChimpum= this.repository.numArtefacts() - ArtefactWithChimpum;
-		ratioArtefactWithChimpum = String.format("%d:%d", ArtefactWithChimpum,ArtefactWithoutChimpum);
+		ratioToolWithPelfo = String.format("%d:%d", ArtefactWithChimpum,ArtefactWithoutChimpum);
 		
 		//averageBudgetChimpumByCurrency
 		for(final String currency: currencies) {
-			final Double averageBudgetChimpumByX =  this.repository.averageBudgetChimpumByCurrency(currency);
-			averageBudgetChimpumByCurrency.put(currency, averageBudgetChimpumByX);
+			final Double averageBudgetChimpumByX =  this.repository.averageRationPelfoByCurrency(currency);
+			averageRationPelfoByCurrency.put(currency, averageBudgetChimpumByX);
 		}
 		//deviationBudgetChimpumByCurrency
 		for(final String currency: currencies) {
-			final Double deviationBudgetChimpumByX =  this.repository.deviationBudgetChimpumByCurrency(currency);
-			deviationBudgetChimpumByCurrency.put(currency, deviationBudgetChimpumByX);
+			final Double deviationBudgetChimpumByX =  this.repository.deviationRationPelfoByCurrency(currency);
+			deviationRationPelfoByCurrency.put(currency, deviationBudgetChimpumByX);
 		}
 		//minBudgetChimpumByCurrency
 		for(final String currency: currencies) {
-			final Double minBudgetChimpumByX =  this.repository.minBudgetChimpumByCurrency(currency);
-			minBudgetChimpumByCurrency.put(currency, minBudgetChimpumByX);
+			final Double minBudgetChimpumByX =  this.repository.minRationPelfoByCurrency(currency);
+			minRationPelfoByCurrency.put(currency, minBudgetChimpumByX);
 		}
 		//maxBudgetChimpumByCurrency
 		for(final String currency: currencies) {
-			final Double maxBudgetChimpumByX =  this.repository.maxBudgetChimpumByCurrency(currency);
-			maxBudgetChimpumByCurrency.put(currency, maxBudgetChimpumByX);
+			final Double maxBudgetChimpumByX =  this.repository.maxRationPelfoByCurrency(currency);
+			maxRationPelfoByCurrency.put(currency, maxBudgetChimpumByX);
 		}
 
 				
@@ -251,11 +251,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setMinimumBudgetPatronagesByStatus(minimumBudgetPatronagesByStatus);
 		result.setMaximumBudgetPatronagesByStatus(maximumBudgetPatronagesByStatus);
 		
-		result.setAverageBudgetChimpumByCurrency(averageBudgetChimpumByCurrency);
-		result.setDeviationBudgetChimpumByCurrency(deviationBudgetChimpumByCurrency);
-		result.setMinBudgetChimpumByCurrency(minBudgetChimpumByCurrency);
-		result.setMaxBudgetChimpumByCurrency(maxBudgetChimpumByCurrency);
-		result.setRatioArtefactWithChimpum(ratioArtefactWithChimpum);
+		result.setAverageRationPelfoByCurrency(averageRationPelfoByCurrency);
+		result.setDeviationRationPelfoByCurrency(deviationRationPelfoByCurrency);
+		result.setMinRationPelfoByCurrency(minRationPelfoByCurrency);
+		result.setMaxRationPelfoByCurrency(maxRationPelfoByCurrency);
+		result.setRatioToolWithPelfo(ratioToolWithPelfo);
 		
 		return result;
 	}
@@ -272,8 +272,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"averageRetailPriceOfToolsByCurrency", "deviationRetailPriceOfToolsByCurrency", "minimumRetailPriceOfToolsByCurrency",
 			"maximumRetailPriceOfToolsByCurrency", "averageBudgetPatronagesByStatus", "deviationBudgetPatronagesByStatus",
 			"minimumBudgetPatronagesByStatus", "maximumBudgetPatronagesByStatus",
-			"averageBudgetChimpumByCurrency","deviationBudgetChimpumByCurrency","minBudgetChimpumByCurrency",
-			"maxBudgetChimpumByCurrency","ratioArtefactWithChimpum");
+			"averageRationPelfoByCurrency","deviationRationPelfoByCurrency","minRationPelfoByCurrency",
+			"maxRationPelfoByCurrency","ratioToolWithPelfo");
 	}
 
 }

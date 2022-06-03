@@ -63,22 +63,22 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	Collection<Tuple> maximumBudgetPatronagesByStatus(Status status);
 
 	//Control Check-----------------------------------------------------------------
-	@Query("SELECT COUNT(c) FROM Chimpum c")
-	Integer numArtefactWithChimpum();
+	@Query("SELECT COUNT(c) FROM Pelfo c")
+	Integer numArtefactWithPelfo();
 
 	@Query("SELECT COUNT(i) FROM Item i")
 	Integer numArtefacts();
 
-	@Query("SELECT ROUND(AVG(c.budget.amount),2) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double averageBudgetChimpumByCurrency(String currency);
+	@Query("SELECT ROUND(AVG(c.ration.amount),2) FROM Pelfo c WHERE c.ration.currency = :currency")
+	Double averageRationPelfoByCurrency(String currency);
 
-	@Query("SELECT ROUND(STDDEV(c.budget.amount),2) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double deviationBudgetChimpumByCurrency(String currency);
+	@Query("SELECT ROUND(STDDEV(c.ration.amount),2) FROM Pelfo c WHERE c.ration.currency = :currency")
+	Double deviationRationPelfoByCurrency(String currency);
 
-	@Query("SELECT ROUND(MIN(c.budget.amount),2) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double minBudgetChimpumByCurrency(String currency);
+	@Query("SELECT ROUND(MIN(c.ration.amount),2) FROM Pelfo c WHERE c.ration.currency = :currency")
+	Double minRationPelfoByCurrency(String currency);
 
-	@Query("SELECT ROUND(MAX(c.budget.amount),2) FROM Chimpum c WHERE c.budget.currency = :currency")
-	Double maxBudgetChimpumByCurrency(String currency);
+	@Query("SELECT ROUND(MAX(c.ration.amount),2) FROM Pelfo c WHERE c.ration.currency = :currency")
+	Double maxRationPelfoByCurrency(String currency);
 
 }

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.chimpum.Chimpum;
+import acme.entities.chimpum.Pelfo;
 import acme.entities.item.Item;
 import acme.entities.moneyExchange.MoneyExchange;
 import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
@@ -18,39 +18,39 @@ import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorChimpumListService implements AbstractListService<Inventor, Chimpum> {
+public class InventorPelfoListService implements AbstractListService<Inventor, Pelfo> {
 
 	@Autowired
-	protected InventorChimpumRepository chimpumRepository;
+	protected InventorPelfoRepository pelfoRepository;
 
 
 	@Override
-	public boolean authorise(final Request<Chimpum> request) {
+	public boolean authorise(final Request<Pelfo> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public Collection<Chimpum> findMany(final Request<Chimpum> request) {
+	public Collection<Pelfo> findMany(final Request<Pelfo> request) {
 
 		assert request != null;
 
 		final int inventorId = request.getPrincipal().getActiveRoleId();
-		final Collection<Item> items = this.chimpumRepository.findItemByInventorId(inventorId);
-		final Collection<Chimpum> chimpums = new HashSet<Chimpum>();
+		final Collection<Item> items = this.pelfoRepository.findItemByInventorId(inventorId);
+		final Collection<Pelfo> pelfos = new HashSet<Pelfo>();
 		for (final Item i : items) {
-			final Chimpum chimpum = this.chimpumRepository.findChimpumByItemId(i.getId());
-			if (chimpum != null) {
-				chimpums.add(chimpum);
+			final Pelfo pelfo = this.pelfoRepository.findPelfoById(i.getId());
+			if (pelfo != null) {
+				pelfos.add(pelfo);
 			}
 
 		}
-		return chimpums;
+		return pelfos;
 
 	}
 
 	@Override
-	public void unbind(final Request<Chimpum> request, final Chimpum entity, final Model model) {
+	public void unbind(final Request<Pelfo> request, final Pelfo entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -58,23 +58,23 @@ public class InventorChimpumListService implements AbstractListService<Inventor,
 		
 		final Money newBudget = this.moneyExchangePatronages(entity);
 		model.setAttribute("newBudget", newBudget);
-		request.unbind(entity, model, "code", "creationMoment", "tittle", "budget", "item.code");
+		request.unbind(entity, model, "code", "creationMoment", "name", "ration", "item.code");
 
 	}
 
-	public Money moneyExchangePatronages(final Chimpum p) {
-		final String itemCurrency = p.getBudget().getCurrency();
+	public Money moneyExchangePatronages(final Pelfo p) {
+		final String itemCurrency = p.getRation().getCurrency();
 
 		final AuthenticatedMoneyExchangePerformService moneyExchange = new AuthenticatedMoneyExchangePerformService();
-		final String systemCurrency = this.chimpumRepository.systemConfiguration().getSystemCurrency();
+		final String systemCurrency = this.pelfoRepository.systemConfiguration().getSystemCurrency();
 		final Double conversionAmount;
 
 		if (!systemCurrency.equals(itemCurrency)) {
 			MoneyExchange conversion;
-			conversion = moneyExchange.computeMoneyExchange(p.getBudget(), systemCurrency);
+			conversion = moneyExchange.computeMoneyExchange(p.getRation(), systemCurrency);
 			conversionAmount = conversion.getTarget().getAmount();
 		} else {
-			conversionAmount = p.getBudget().getAmount();
+			conversionAmount = p.getRation().getAmount();
 		}
 
 		final Money newBudget = new Money();

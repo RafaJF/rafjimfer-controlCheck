@@ -1,0 +1,16 @@
+inventor.pelfo.list.label.code = Código
+inventor.pelfo.list.label.tittle = Título
+inventor.pelfo.list.label.budget = Precio
+inventor.pelfo.list.label.item-code = Artículo
+inventor.pelfo.list.label.creationMoment = Fecha de creación
+inventor.pelfo.list.label.itemsPublished = Artículos
+
+
+inventor.pelfo.list.label.startperiod = Start Period
+inventor.pelfo.list.label.endperiod = End Period
+
+inventor.pelfo.form.error.link = URL no válido
+inventor.pelfo.form.error.budget-amount-negative-or-zero= El precio debe ser superior a 0
+inventor.pelfo.form.error.budget-currency-invalid = La moneda introducida debe ser aceptada por el sistema
+inventor.pelfo.form.error.startPeriod-must-be-a-month-after-creationMoment= La fecha de inicio debe ser al menos un mes después de la de creación
+inventor.pelfo.form.error.endPeriod-must-be-a-week-after-startPeriod = La fecha de fin debe ser al menos una semana después de la de inicio

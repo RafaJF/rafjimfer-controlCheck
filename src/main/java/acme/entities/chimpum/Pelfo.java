@@ -25,12 +25,12 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Chimpum extends AbstractEntity {
+public class Pelfo extends AbstractEntity {
 
 	protected static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@Pattern(regexp = "^\\d{2}\\/(0[1-9]|1[012])\\/(0[1-9]|[12][0-9]|3[01])$")
+	@Pattern(regexp = "^\\d{6}:yy:mm:dd$")
 	protected String			code;
 
 	@NotNull
@@ -40,11 +40,11 @@ public class Chimpum extends AbstractEntity {
 
 	@NotBlank
 	@Length(min = 0, max = 100)
-	protected String			tittle;
+	protected String			name;
 
 	@NotBlank
 	@Length(min = 0, max = 255)
-	protected String			description;
+	protected String			summary;
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
@@ -56,10 +56,10 @@ public class Chimpum extends AbstractEntity {
 	
 	@NotNull
 	@Valid
-	protected Money				budget;
+	protected Money				ration;
 
 	@URL
-	protected String			link;
+	protected String			additionalInfo;
 
 	//Control Check -----------------------------------------------------------
 

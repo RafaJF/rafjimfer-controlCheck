@@ -42,12 +42,12 @@ public class AdministratorDashboard implements Serializable{
     
     //-----------CONTROL CHECK------------------------------------------------
     
-    String ratioArtefactWithChimpum;
+    String ratioToolWithPelfo;
     
-    Map<String,Double>  averageBudgetChimpumByCurrency;
-    Map<String,Double> deviationBudgetChimpumByCurrency;
-    Map<String,Double> minBudgetChimpumByCurrency;
-    Map<String, Double> maxBudgetChimpumByCurrency;
+    Map<String,Double>  averageRationPelfoByCurrency;
+    Map<String,Double> deviationRationPelfoByCurrency;
+    Map<String,Double> minRationPelfoByCurrency;
+    Map<String, Double> maxRationPelfoByCurrency;
 
 	// Derived attributes -----------------------------------------------------
 

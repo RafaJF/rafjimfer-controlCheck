@@ -5,32 +5,32 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.chimpum.Chimpum;
+import acme.entities.chimpum.Pelfo;
 import acme.entities.item.Item;
 import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface InventorChimpumRepository extends AbstractRepository{
+public interface InventorPelfoRepository extends AbstractRepository{
 	
 	
-	@Query("SELECT i FROM Item i WHERE i.inventor.id = :id")
+	@Query("SELECT i FROM Item i WHERE i.inventor.id = :id and i.itemType = acme.entities.item.ItemType.TOOL")
 	Collection<Item> findItemByInventorId(int id);
 	
-	@Query("SELECT c FROM Chimpum c")
-	Collection<Chimpum> findAllChimpums();
+	@Query("SELECT c FROM Pelfo c")
+	Collection<Pelfo> findAllPelfo();
 	
-	@Query("SELECT c.item FROM Chimpum c")
-	Collection<Item> findItemByChimpum();
+	@Query("SELECT c.item FROM Pelfo c")
+	Collection<Item> findItemByPelfo();
 	
-	@Query("SELECT c.item FROM Chimpum c where c.item.code = :code")
-	Item findItemChimpumByItemCode(String code);
+	@Query("SELECT c.item FROM Pelfo c where c.item.code = :code")
+	Item findItemPelfoByItemCode(String code);
 	
-	@Query("SELECT c FROM Chimpum c WHERE c.item.id = :id")
-	Chimpum findChimpumByItemId(int id);
+	@Query("SELECT c FROM Pelfo c WHERE c.item.id = :id")
+	Pelfo findPelfoByItemId(int id);
 	
-	@Query("SELECT c FROM Chimpum c WHERE c.id = :id")
-	Chimpum findChimpumById(int id);
+	@Query("SELECT c FROM Pelfo c WHERE c.id = :id")
+	Pelfo findPelfoById(int id);
 	
 	@Query("SELECT ac.acceptedCurrencies from SystemConfiguration ac")
 	String findAcceptedCurrencies();

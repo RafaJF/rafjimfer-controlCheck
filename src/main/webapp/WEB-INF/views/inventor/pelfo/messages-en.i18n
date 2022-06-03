@@ -1,0 +1,17 @@
+inventor.pelfo.list.label.code = Code
+inventor.pelfo.list.label.tittle = Tittle
+inventor.pelfo.list.label.budget = Budget
+inventor.pelfo.list.label.item-code = Item
+
+inventor.pelfo.list.label.description = Description
+inventor.pelfo.list.label.startperiod = Start Period
+inventor.pelfo.list.label.endperiod = End Period
+inventor.pelfo.list.label.link = Link
+inventor.pelfo.list.label.creationMoment = Creation Moment
+inventor.pelfo.list.label.itemsPublished = Items
+
+inventor.pelfo.form.error.link = Link no valid
+inventor.pelfo.form.error.budget-amount-negative-or-zero= Budget must greater than 0
+inventor.pelfo.form.error.budget-currency-invalid = Currency must be accepted by system
+inventor.pelfo.form.error.startPeriod-must-be-a-month-after-creationMoment= Start date must be at least a month after of creation moment
+inventor.pelfo.form.error.endPeriod-must-be-a-week-after-startPeriod = End date must be at least a week after of start date
